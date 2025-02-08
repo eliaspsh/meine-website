@@ -4,10 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>Willkommen auf meiner Website!</h1>
-    <p>Diese Website wird mit Netlify und GitHub gehostet.</p>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mein Logo</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><button id="theme-toggle">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="parallax">
+        <h1>Willkommen auf meiner Website!</h1>
+        <p>Hier erfährst du alles über mich.</p>
+    </section>
+    
+    <section id="blog">
+        <h2>Mein Blog</h2>
+        <div id="blog-posts"></div>
+    </section>
+    
+    <section id="games">
+        <h2>Mein Spiel</h2>
+        <p>Bald verfügbar auf <a href="https://store.steampowered.com/">Steam</a></p>
+    </section>
+    
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <form>
+            <input type="text" placeholder="Dein Name" required>
+            <input type="email" placeholder="Deine E-Mail" required>
+            <textarea placeholder="Deine Nachricht" required></textarea>
+            <button type="submit">Senden</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>Folge mir auf:</p>
+        <a href="#">Instagram</a> | <a href="#">LinkedIn</a> | <a href="#">XING</a> | <a href="#">GitHub</a>
+    </footer>
 </body>
 </html>
